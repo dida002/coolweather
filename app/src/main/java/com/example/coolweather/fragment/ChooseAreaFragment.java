@@ -101,6 +101,7 @@ public class ChooseAreaFragment extends Fragment {
                         activity.drawerLayout.closeDrawers();
                         activity.swipeRefresh.setRefreshing(true);
                         activity.requestWeather(weatherId);
+                        activity.weatherId = weatherId;
                     }
                     // instanceof关键字可以用来判断一个对象是否属于某个类的实例
                     // 如果是在WeatherActivity中，就关闭滑动菜单，显示下拉刷新进度条，然后请求新城市的天气信息
